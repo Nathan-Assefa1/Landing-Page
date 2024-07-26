@@ -2343,6 +2343,12 @@ input, select, textarea {
 			display: block;
 			float: left;
 			padding: 3em 0;
+			/* width: 50%; */
+		}
+		ul.icons-grid #skills li {
+			display: block;
+			float: left;
+			padding: 3em 0;
 			width: 50%;
 		}
 
@@ -2350,11 +2356,21 @@ input, select, textarea {
 				margin: 0;
 			}
 
-			ul.icons-grid li:nth-child(2n + 1) {
+			ul.icons-grid #skills li:nth-child(2n + 1) {
 				box-shadow: inset -1px 0 0 0 #dddddd, 1px 0 0 0 #dddddd;
 			}
 
 			ul.icons-grid li:nth-child(2n + 3):before {
+				/* background: #dddddd; */
+				content: '';
+				display: block;
+				height: 2px;
+				margin-top: -3em;
+				position: absolute;
+				width: 100%;
+			}
+
+			ul.icons-grid #skills li:nth-child(2n + 3):before {
 				background: #dddddd;
 				content: '';
 				display: block;
@@ -2728,7 +2744,12 @@ input, select, textarea {
 		}
 
 /* Main */
-
+	#profile{
+		border-radius: 10px;
+		width: 250px;
+		height: auto;
+		padding-top: 2%;
+	}
 	.main {
 		position: relative;
 	}
@@ -2738,7 +2759,7 @@ input, select, textarea {
 		}
 
 		.main .container {
-			padding: 5em 2.5em 8em 2.5em ;
+			padding: 5em 2.5em 5em 2.5em ;
 			background: rgba(255, 255, 255, 0.95);
 			box-shadow: inset 0 1px 0 0 #dddddd;
 		}
@@ -2787,7 +2808,11 @@ input, select, textarea {
 			}
 
 /* Header */
-
+	.sides{
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: left;text-align: left;
+	}
 	#header {
 		height: 100vh;
 		position: relative;
@@ -2856,7 +2881,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		min-height: 100vh;
+		min-height: 10vh;
 		padding: 0 0 12em 0;
 		position: relative;
 		text-align: center;
