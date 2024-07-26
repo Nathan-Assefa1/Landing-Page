@@ -2808,10 +2808,13 @@ input, select, textarea {
 			}
 
 /* Header */
-	.sides{
+	.sides p{
 		padding-left: 10px;
 		padding-right: 10px;
 		text-align: left;text-align: left;
+	}
+	.sides h3{
+		text-align: center
 	}
 	#header {
 		height: 100vh;
